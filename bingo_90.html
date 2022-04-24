@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="imagens/bingo.png">
+    <title>BINGO!</title>
+</head>
+<body>
+
+    <nav id="menu">
+        <h3>Menu Principal</h3>
+        <ul>
+            <li><a href="bingo_90.html" target="_self">JOGAR</a></li>
+            <li><a href="bingo_75.html" target="_self">BINGO 75</a></li>
+            <li><a href="index.php" target="_self">JOGOS</a></li>
+            <li id="relogio" class="pisca"></li>
+        </ul>
+    </nav>
+    
+    <script>
+    var myVar = setInterval(myTimer, 1000);
+    
+    function myTimer() {
+      var d = new Date();
+      document.getElementById("relogio").innerHTML = d.toLocaleTimeString();
+    }
+        var pedra = 0
+        var nsort = " "
+        var vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90]
+    </script>
+
+    <section id="cabeca">
+            <img id="cabeca" src="imagens/bolas-bingo.png">     
+    </section>
+
+    <section>
+        <table>
+            <tr>
+                <td id="letra">B</td>
+                <td id="n1">01</td>
+                <td id="n2">02</td>
+                <td id="n3">03</td>
+                <td id="n4">04</td>
+                <td id="n5">05</td>
+                <td id="n6">06</td>
+                <td id="n7">07</td>
+                <td id="n8">08</td>
+                <td id="n9">09</td>
+                <td id="n10">10</td>
+                <td id="n11">11</td>
+                <td id="n12">12</td>
+                <td id="n13">13</td>
+                <td id="n14">14</td>
+                <td id="n15">15</td>
+            </tr>
+            <tr>
+                <td id="letra">I</td>
+                <td id="n16">16</td>
+                <td id="n17">17</td>
+                <td id="n18">18</td>
+                <td id="n19">19</td>
+                <td id="n20">20</td>
+                <td id="n21">21</td>
+                <td id="n22">22</td>
+                <td id="n23">23</td>
+                <td id="n24">24</td>
+                <td id="n25">25</td>
+                <td id="n26">26</td>
+                <td id="n27">27</td>
+                <td id="n28">28</td>
+                <td id="n29">29</td>
+                <td id="n30">30</td>
+            </tr>
+            <tr>
+                <td id="letra">N</td>
+                <td id="n31">31</td>
+                <td id="n32">32</td>
+                <td id="n33">33</td>
+                <td id="n34">34</td>
+                <td id="n35">35</td>
+                <td id="n36">36</td>
+                <td id="n37">37</td>
+                <td id="n38">38</td>
+                <td id="n39">39</td>
+                <td id="n40">40</td>
+                <td id="n41">41</td>
+                <td id="n42">42</td>
+                <td id="n43">43</td>
+                <td id="n44">44</td>
+                <td id="n45">45</td>
+            </tr>
+            <tr>
+                <td id="letra">G</td>
+                <td id="n46">46</td>
+                <td id="n47">47</td>
+                <td id="n48">48</td>
+                <td id="n49">49</td>
+                <td id="n50">50</td>
+                <td id="n51">51</td>
+                <td id="n52">52</td>
+                <td id="n53">53</td>
+                <td id="n54">54</td>
+                <td id="n55">55</td>
+                <td id="n56">56</td>
+                <td id="n57">57</td>
+                <td id="n58">58</td>
+                <td id="n59">59</td>
+                <td id="n60">60</td>
+            </tr>
+<tr>
+                <td id="letra">O</td>
+                <td id="n61">61</td>
+                <td id="n62">62</td>
+                <td id="n63">63</td>
+                <td id="n64">64</td>
+                <td id="n65">65</td>
+                <td id="n66">66</td>
+                <td id="n67">67</td>
+                <td id="n68">68</td>
+                <td id="n69">69</td>
+                <td id="n70">70</td>
+                <td id="n71">71</td>
+                <td id="n72">72</td>
+                <td id="n73">73</td>
+                <td id="n74">74</td>
+                <td id="n75">75</td>
+            </tr>
+            <tr>
+                <td id="letra">!</td>
+                <td id="n76">76</td>
+                <td id="n77">77</td>
+                <td id="n78">78</td>
+                <td id="n79">79</td>
+                <td id="n80">80</td>
+                <td id="n81">81</td>
+                <td id="n82">82</td>
+                <td id="n83">83</td>
+                <td id="n84">84</td>
+                <td id="n85">85</td>
+                <td id="n86">86</td>
+                <td id="n87">87</td>
+                <td id="n88">88</td>
+                <td id="n89">89</td>
+                <td id="n90">90</td>
+          
+
+
+
+        </table>
+
+
+
+    </section>
+
+    <section>
+        <section>
+         
+        </section>
+            <table>
+               <tr>
+                    <td rowspan="2" id="globo">
+                        <button><img id="glob" src="imagens/globo.gif" alt="Bolas girando" onclick="sorteio()"></button>
+                        </td>
+                    <td id="psort"><img src="imagens/setaesq.gif"></td>
+                    <td rowspan="2" id="numeros">Clique no Globo<br> para iniciar</td>      
+                </tr>
+                <tr>
+                    <td id="tit-psort">&ensp;</td>
+                </tr>            
+        </table>
+
+            <script>
+
+                function bolas() {
+                    document.getElementById("glob").src=("imagens/sorteio.gif")
+                }
+
+                function sorteio() {
+                    document.getElementById("glob").src=("imagens/trevo.png")
+                    var numSort = Math.floor(Math.random() * 90 + 1)
+                    
+                    if (pedra == 90) {
+                        window.alert ('Todos os números já foram sorteados. \n Fim de jogo!')
+                    } else {
+                        if (vetor[numSort] == 0) {
+                            sorteio()
+                        } else {
+                            pedra = pedra + 1
+
+                            str = numSort.toString()
+
+                            if (str.length == 1) {
+                            str = "0" + str
+                            }
+
+                            if (nsort.length > 22) {
+                                nsort = nsort.substring(0, 22);
+                            }
+
+                            document.getElementById("psort").innerHTML = str
+                            document.getElementById("tit-psort").innerHTML = pedra + "ª Bola"
+                            document.getElementById("numeros").innerHTML = nsort
+                            document.getElementById("numeros").style.fontSize = "50px"
+                            document.getElementById("n"+numSort.toString()).style.color = "white"
+                            document.getElementById("n"+numSort.toString()).style.background = "green"
+                            document.getElementById("n"+numSort.toString()).style.border = "outset 3px"
+                            document.getElementById("glob").src=("imagens/trevo.png")
+                       
+                            if (pedra > 1) {
+                                nsort = str + " - " + nsort
+                            } else {
+                                nsort = str
+                            }
+                                vetor[numSort] = 0 
+                            //if (pedra == 90) {
+                            //    window.alert ('Fim do jogo!\n\nClique para jogar novamente')
+                            //    location.reload()
+
+                            //}               
+                        } 
+                    }                   
+                    setTimeout(bolas, 3000)   
+                }
+            </script>
+            
+        </div>
+        
+    </section>
+    
+    <section>
+    <footer>
+        <p>Carlos Curty &copy; 2020 </p>
+    </footer>
+</section>
+    
+</body>
+</html>

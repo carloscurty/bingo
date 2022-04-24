@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+div {
+    margin:100px auto;
+}
+
+div.topo {
+    background-color:black;
+    margin:0 auto;
+    max-height: 170px;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    height: 650px;
+    background-image: linear-gradient(rgb(75, 75, 134), whitesmoke);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: black;
+}
+p {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    margin:0 auto;
+}
+

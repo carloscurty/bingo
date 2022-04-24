@@ -1,0 +1,119 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html version="-//W3C//DTD XHTML 1.1//EN"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/xhtml
+                          http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=latin1" />
+		<title>Caça Níqueis Campeonato Carioca 2012 (SLOTS)</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript">
+			var credito = 0;
+			var aux = 0;
+			var aposta = 1;
+			var nSort = 0;
+            var slt1, slt2; 
+			
+			function aleatorio(inferior,superior){ 
+				numPossibilidades = superior - inferior; 
+				aleat = Math.random() * numPossibilidades;
+				aleat = Math.floor(aleat);
+				return parseInt(inferior) + aleat;
+			}
+			
+			function jogar() {
+                credito = 100
+                aposta = 1
+				if (credito < 1 || credito < aposta) {
+					aux = parseInt(aux);
+                    credito = 100
+					credito = credito + aux;
+				}
+				else {
+					if(credito > 0 && credito >= aposta){
+						credito = credito - aposta;
+						document.getElementById('escud1').src = '../bingo/imagens/dado.ico';
+						document.getElementById('escud2').src = '../bingo/imagens/dado.ico';
+						
+						//processamento do slot1
+
+                        nSort = aleatorio(0,9);
+						switch (nSort) {
+							case 0:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n0.ico'", 500);
+							slt1 = 0;
+							break;
+                            case 1:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n1.ico'", 500);
+							slt1 = 1;
+							break;
+                            case 2:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n2.ico'", 500);
+							slt1 = 2;
+							break;
+							case 3:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n3.ico'", 500);
+							slt1 = 3;
+							break;
+							case 4:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n4.ico'", 500);
+							slt1 = 4;
+							break;
+							case 5:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n5.ico'", 500);
+							slt1 = 5;
+							break;
+							case 6:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n6.ico'", 500);
+							slt1 = 6;
+							break;
+							case 7:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n7.ico'", 500);
+							slt1 = 7;
+							break;
+							case 8:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n8.ico'", 500);
+							slt1 = 8;
+							break;
+							case 9:
+							cont=setTimeout("document.getElementById('escud2').src = 'img/n9.ico'", 500);
+							slt1 = 9;
+							break;
+						}
+						
+						//processamento do slot2
+						
+  					cont=setTimeout("verificaPremio()", 9000);
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+	
+		<div id = "corpo">
+		
+			<div id = "tela">
+				<div id = "slot1">
+					<img id = "escud1" src = "../bingo/imagens/dado.ico">
+				</div>
+				<div id = "slot2">
+					<img id = "escud2" src = "../bingo/imagens/dado.ico">
+				</div>
+            </div>
+			
+			<div id = "botoes">
+				<img src = "img/jogar.gif" onMouseDown="this.src='img/jogar_p.gif';" onMouseUp="this.src='img/jogar.gif';" onclick = "jogar();"/>
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>
