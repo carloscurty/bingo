@@ -11,3 +11,7 @@ As linguagens utilizadas foram:
 * INteratividade: JavaScript
 
 [Repositório no GitHub](https://carloscurty.github.io/bingo)
+
+~~~
+Copyright 2022 @ Carlos Curty - Todos os direitos reservados
+~~~
