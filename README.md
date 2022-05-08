@@ -12,7 +12,7 @@ As linguagens utilizadas foram:
 [Repositório no GitHub](https://github.com/carloscurty/bingo)
 
 <br>
-<a href="https://carloscurty.github.io"><img src="https://user-images.githubusercontent.com/68711113/165831130-798ed958-d7d9-48ec-a6b5-1e0f19f92dff.png" alt="seta voltar" width="100"/></a>
+<a href="https://carloscurty.github.io"><img src="https://user-images.githubusercontent.com/68711113/167276811-1c392ec2-39c6-4c98-9de7-fc59d6237ec7.png" alt="seta voltar" width="100"/></a>
 
 
 ~~~
